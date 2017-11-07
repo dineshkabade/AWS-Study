@@ -1,0 +1,803 @@
+    1  ll
+    2  pwd
+    3  ll
+    4  ll /etc/yum.repos.d/
+    5  vi /etc/yum.repos.d/mongodb.repo
+    6  sudo vi /etc/yum.repos.d/mongodb.repo
+    7  ll /etc/yum.repos.d/
+    8  yum install mongodb-org
+    9  sudo yum install mongodb-org
+   10  sudo vi /etc/yum.repos.d/mongodb.repo
+   11  sudo yum install mongodb-org
+   12  sudo yum update
+   13  sudo yum install mongodb-org
+   14  sudo yum-config-manager --enable epel
+   15  sudo yum install mongodb-
+   16  sudo yum-config-manager --enable mongodb
+   17  sudo yum install mongodb-org
+   18  sudo yum update
+   19  sudo yum install mongodb-org
+   20  sudo yum-config-manager --enable mongodb
+   21  sudo yum search "mongo"
+   22  sudo yum search "mongodb-org"
+   23  sudo yum install mongodb-org
+   24  sudo vi /etc/yum.repos.d/mongodb.repo
+   25  sudo yum-config-manager --enable mongodb.rep
+   26  sudo yum-config-manager --enable mongodb.repo
+   27  ll /etc/yum.repos.d/
+   28  sudo yum-config-manager --enable mongodb
+   29  sudo yum install mongodb-org
+   30  sudo yum install mongodb-org-server
+   31  sudo yum search "mongodb-org"
+   32  sudo vi /etc/yum.repos.d/mongodb.repo
+   33  sudo yum-config-manager --enable mongodb
+   34  sudo yum search "mongodb-org"
+   35  sudo yum install mongodb-org
+   36  sudo vi /etc/yum.repos.d/mongodb.repo
+   37  sudo yum-config-manager --enable mongodb
+   38  sudo yum install mongodb-org
+   39  sudo vi /etc/yum.repos.d/mongodb.repo
+   40  sudo yum-config-manager --enable mongodb
+   41  sudo vi /etc/yum.repos.d/mongodb.repo
+   42  sudo yum-config-manager --enable mongodb
+   43  sudo yum install mongodb-org
+   44  sudo vi /etc/selinux/config
+   45  sudo reboot
+   46  semanage port -a -t mongod_port_t -p tcp 27017
+   47  sudo service mongod start
+   48  sudo chkconfig mongod on
+   49  mongod --version
+   50  sudo mongod --version
+   51  systemctl status mongod
+   52  export LC_ALL=C
+   53  sudo mongod --version
+   54  pwd
+   55  ls -la
+   56  vi .bashrc 
+   57  vi .bash_profile 
+   58  ss -anp | grep 27017
+   59  vi /etc/mongod.conf 
+   60  sudo vi /etc/mongod.conf 
+   61  systemctl restart mongod
+   62  passwd
+   63  sudo systemctl restart mongod
+   64  firewall-cmd --zone=public --permanent --list-service
+   65  sudo firewall-cmd --zone=public --permanent --list-service
+   66  uname
+   67  uname -a
+   68  cat /etc/redhat-releas
+   69  cat /etc/redhat-release 
+   70  sudo firewall-cmd
+   71  sudo systemctl status mongod
+   72  cd /opt/
+   73  ll
+   74  sudo vi /etc/mongod.conf 
+   75  mongo --port 27017
+   76  sudo vi /etc/mongod.conf 
+   77  sudo systemctl status mongod
+   78  sudo systemctl restart mongod
+   79  sudo systemctl status mongod
+   80  cd /etc
+   81  ll
+   82  ls -la
+   83  vi mongod.conf 
+   84  java -version
+   85  cd ~
+   86  wget
+   87  yum install wget
+   88  sudo yum install wget
+   89  wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jre-8u101-linux-x64.rpm"
+   90  ll
+   91  sudo yum localinstall jre-8u101-linux-x64.rpm 
+   92  java -version
+   93  ll /usr/java/jre1.8.0_101/
+   94  sudo groupadd tomcat
+   95  sudo useradd -M -s /bin/nologin -g tomcat -d /opt/tomcat tomcat
+   96  wget http://mirror.fibergrid.in/apache/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
+   97  ll
+   98  sudo mkdir /opt/tomcat
+   99  sudo tar xvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+  100  ll /opt/tomcat/
+  101  cd /opt/tomcat/
+  102  ll
+  103      sudo chgrp -R tomcat conf
+  104      sudo chmod g+rwx conf
+  105      sudo chmod g+r conf/*
+  106  ll
+  107  sudo chown -R tomcat webapps/ work/ temp/ logs/
+  108  ll
+  109  sudo chown -R tomcat:tomcat webapps/ work/ temp/ logs/
+  110  ll
+  111  sudo chown -R tomcat:tomcat *
+  112  ll
+  113  ll /usr/lib/jvm
+  114  ll /usr/java/jre1.8.0_101/
+  115  ll /usr/bin/j*
+  116  which /usr/bin/java
+  117  cd /etc/alternatives/
+  118  ll
+  119  cd /usr/java/jre1.8.0_101
+  120  ll
+  121  sudo vi /etc/systemd/system/tomcat.service
+  122  sudo systemctl daemon-reload
+  123  sudo systemctl start tomcat
+  124  sudo systemctl enable tomcat
+  125  sudo systemctl status tomcat
+  126  ss -anp | grep 8080
+  127  ss -anp | grep 443
+  128  cd /opt/tomcat/
+  129  ll
+  130  sudo systemctl stop tomcat
+  131  rm logs
+  132  cd /var/log
+  133  ll
+  134  sudo mkdir /var/log/tomcat
+  135  ll
+  136  chown tomcat:tomcat tomcat
+  137  sudo chown tomcat:tomcat tomcat
+  138  ll
+  139  cd /opt/tomcat
+  140  ll
+  141  rmdir logs
+  142  sudo rmdir logs
+  143  sudo rm -rf logs
+  144  ln -s /var/log/tomcat logs
+  145  sudo ln -s /var/log/tomcat logs
+  146  ll
+  147  chown tomcat:tomcat logs
+  148  sudo chown tomcat:tomcat logs
+  149  ll
+  150  cd webapps/
+  151  ll
+  152  cd webapps/
+  153  sudo cd webapps/
+  154  ll
+  155  sudo cd webapps/
+  156  ll webapps/
+  157  ll
+  158  cd logs
+  159  ll
+  160  pwd
+  161  cd -
+  162  ll
+  163  chmod u+r webapps/
+  164  sudo chmod u+r webapps/
+  165  ll
+  166  sudo chmod ugo+r webapps/
+  167  ll
+  168  cd webapps/
+  169  sudo cd webapps/
+  170  chown root:root webapps/
+  171  sudo chown root:root webapps/
+  172  ll
+  173  cd webapps/
+  174  pwd
+  175  ll
+  176  ll webapps/
+  177      sudo chgrp -R tomcat conf
+  178      sudo chmod g+rwx conf
+  179      sudo chmod g+r conf/*
+  180  sudo chown -R tomcat webapps/ work/ temp/ logs/
+  181  ll
+  182  sudo chown -R tomcat:root webapps/ work/ temp/ logs/
+  183  ll
+  184  ll webapps/
+  185  cd webapps/
+  186  sudo systemctl stop tomcat
+  187  cd webapps/
+  188  ll webapps/
+  189  sudo chown -R tomcat:root webapps/*
+  190  ll webapps/
+  191  sudo chown -R tomcat:root webapps/ROOT 
+  192  ll webapps/
+  193  ll
+  194  chown root:root webapps/
+  195  sudo chown root:root webapps/
+  196  ll
+  197  cd webapps/
+  198  chmod u_rwx webapps/
+  199  sudo chmod u+rwx webapps/
+  200  sudo chmod u+rwx webapps/*
+  201  ll
+  202  cd webapps/
+  203  sudo su -
+  204  ll
+  205  sudo chown -R tomcat:tomcat webapps/
+  206  ll
+  207  sudo chown -R tomcat:tomcat temp/ work/
+  208  ll
+  209  pwd
+  210  exit
+  211  cd /opt/tomcat/
+  212  ll
+  213  cd webapps/
+  214  cd lib
+  215  cd ..
+  216  ll
+  217  cd tomcat/
+  218  ll
+  219  sudo chmod ugo+rw webapps/
+  220  ll
+  221  cd webapps/
+  222  su tomcat
+  223  su -
+  224  sudo su -
+  225  ll
+  226  exit
+  227  sudo systemctl status tomcat
+  228  sudo systemctl start tomcat
+  229  sudo systemctl status tomcat
+  230  cd /opt/tomcat/
+  231  ll
+  232  ccd webapps/
+  233  cd webapps/
+  234  ll
+  235  sudo su -
+  236  cd ~
+  237  sudo yum install epel-release
+  238  sudo yum install nginx
+  239  sudo yum update
+  240  sudo vi /etc/selinux/config
+  241  sudo yum install nginx
+  242  cd ~
+  243  wget http://download.fedoraproject.org/pub/epel/4/x86_64/epel-release-4-10.noarch.rpm
+  244  ll
+  245  sudo rpm –ivh  epel-release-4-10.noarch.rpm 
+  246  sudo yum localinstall epel-release-4-10.noarch.rpm 
+  247  sudo yum update
+  248  yum repolist
+  249  yum install Nginx
+  250  sudo yum repolist
+  251  sudo yum install nginx
+  252  sudo yum install Nginx
+  253  wget http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+  254  sudo yum localinstall nginx-release-centos-7-0.el7.ngx.noarch.rpm 
+  255  sudo yum install nginx
+  256  sudo systemctl enable nginx
+  257  sudo systemctl status nginx
+  258  sudo systemctl start nginx
+  259  sudo systemctl status nginx
+  260  ll
+  261  sudo cp skipq* /etc/nginx/
+  262  cd /etc/nginx/
+  263  ll
+  264  mkdir cert
+  265  sudo mkdir cert
+  266  cp skipq* cert/
+  267  ll
+  268  sudo cp skipq* cert/
+  269  ll
+  270  ll cert/
+  271  ll
+  272  cd conf.d/
+  273  ll
+  274  vi default.conf 
+  275  sudo vi default.conf 
+  276  sudo systemctl restart nginx
+  277  cd /var/log/
+  278  ll
+  279  cd nginx/
+  280  ll
+  281  vi skipq.access.log 
+  282  tail skipq.access.log 
+  283  sudo ss -anp | grep 443
+  284  ll
+  285  cat skipq.access.log 
+  286  cd /opt/tomcat/
+  287  ll
+  288  pwd
+  289  sudo su -
+  290  ll
+  291  rm *.war
+  292  exit
+  293  ll
+  294  sudo su -
+  295  ll
+  296  sudo su -
+  297  cd /var/log/tomcat/
+  298  ll
+  299  tail -f mainlayer.log 
+  300  sudo su -
+  301  ll
+  302  sudo su -
+  303  Up the previledges
+  304  ssh -i keys/aws_ssh/SkipQ.pem ec2-user@ec2-54-191-245-70.us-west-2.compute.amazonaws.com
+  305  sudo ssh -i keys/aws_ssh/SkipQ.pem ec2-user@ec2-54-191-245-70.us-west-2.compute.amazonaws.com
+  306  ssh -i keys/aws_ssh/SkipQ.pem ec2-user@ec2-54-191-245-70.us-west-2.compute.amazonaws.com
+  307  sudo su -
+  308  sudo su -
+  309  ssh -i keys/aws_ssh/SkipQ.pem ec2-user@ec2-54-191-245-70.us-west-2.compute.amazonaws.com
+  310  exit
+  311  systemctl status tomcat
+  312  sudo su -
+  313  ssh -i keys/aws_ssh/SkipQ.pem ec2-user@ec2-54-191-245-70.us-west-2.compute.amazonaws.com
+  314  sudo su -
+  315  exit
+  316  sudo su -
+  317  ll
+  318  cd /opt/tomcat/webapps/
+  319  ll
+  320  md5sum
+  321  which md5sum
+  322  ll
+  323  cd /opt/tomcat/webapps/
+  324  ll
+  325  sudo su -
+  326  ll
+  327  sudo su -
+  328  sudo systemctl status tomcat
+  329  exit
+  330  sudo systemctl status tomcat
+  331  exit
+  332  Up the previledges
+  333  sudo su -
+  334  exit
+  335  sudo su -
+  336  exit
+  337  sudo su -
+  338  clear
+  339  cd /etc/ngix
+  340  cd /etc/nginx/
+  341  ll
+  342  cd conf.d/
+  343  ll
+  344  ls -la
+  345  rm .default.conf.swp 
+  346  sudo su -
+  347  sudo su -
+  348  sudo su -
+  349  sudo su -
+  350  ll
+  351  ll
+  352  rm mainlayer.war 
+  353  ll
+  354  sudo su -
+  355  sudo su -
+  356  cd /var/log/tomcat/
+  357  ll
+  358  vi catalina.2016-10-04.log 
+  359  vi catalina.out 
+  360  vi datalayer.log 
+  361  sudo su -
+  362  sudo su -
+  363  QuantumBrisk123
+  364  exit
+  365  sudo su -
+  366  dineshk
+  367  sudo su-
+  368  systemctl stop tomcat
+  369  sudo su -
+  370  exit
+  371  systemctl stop tomcat
+  372  sudo su -
+  373  exit
+  374  sudo su -
+  375  exit
+  376  sudo su -
+  377  exit
+  378  sudo su -
+  379  ll
+  380  cd /etc/nginx/
+  381  ll
+  382  vi conf.d/default.conf 
+  383  cd cert/
+  384  ll
+  385  yum nginx version
+  386  yum --help
+  387  yum info nginx
+  388  yum --info nginx
+  389  yum info
+  390  yum version
+  391  sudo su
+  392  cd /etc/nginx/
+  393  ll
+  394  ll cert/
+  395  vi nginx.conf 
+  396  ll
+  397  ll conf.d/
+  398  rm skipq.crt 
+  399  sudo su
+  400  sudo su -
+  401  exit
+  402  sudo su -
+  403  exit
+  404  sudo so
+  405  sudo su
+  406  exit
+  407  sudo su
+  408  yum -y install sendmail mailutils mailx sendmail-bin sendmail-cf cyrus-sasl-plain
+  409  sudo su
+  410  exit
+  411  sudo su
+  412  exit
+  413  sudo su -
+  414  sudo su -
+  415  ls
+  416  mongo
+  417  ls
+  418  cd build/
+  419  ls
+  420  cd datalayer.war 
+  421  cd  .
+  422  cd..
+  423  cd ..
+  424  ls
+  425  su -
+  426  cd ..
+  427  ls
+  428  cd opt/tomcat/webapps
+  429  ls
+  430  pwd
+  431  cd ..
+  432  ls
+  433  cd opt/tomcat/webapps
+  434  exit
+  435  ls
+  436  mongo
+  437  ls
+  438  mongo
+  439  su -
+  440  mongo
+  441  ls
+  442  su -
+  443  exit
+  444  mongo
+  445  mongo
+  446  show databases
+  447  mongo
+  448  clear
+  449  mongo
+  450  clear
+  451  mongo
+  452  clear
+  453  mongo
+  454  su - root
+  455  su -
+  456  ls
+  457  mongo 
+  458  mongo admin
+  459  exit
+  460  su mongodb
+  461  su root
+  462  su - root
+  463  exit
+  464  mongo
+  465  ls
+  466  cd ..
+  467  su - root
+  468  exit
+  469  mongo
+  470  exit
+  471  mongo
+  472  date
+  473  mongo
+  474  su - root
+  475  mongo
+  476  mongo admin -u root -p 0a%rJFQll[C22}N
+  477  pgrep mongod
+  478  mongo
+  479  mongo admin -u root -p 0a%rJFQll[C22}N --authenticationDatabase "admin"
+  480  mongo -u root -p 0a%rJFQll[C22}N --authenticationDatabase "admin"
+  481  mongo -u "root" -p "0a%rJFQll[C22}N" --authenticationDatabase "admin"
+  482  mongo
+  483  mongo -u "root" -p "0a%rJFQll
+  484  mongo
+  485  sudo mongo
+  486  mongo admin -u root -p "0a%rJFQll[C22}N"
+  487  mongo admin -u root -p '0a%rJFQll[C22}N'
+  488  mongo -u root -p '0a%rJFQll[C22}N'
+  489  mongo test  -u root -p '0a%rJFQll[C22}N'
+  490  mongo test  -u root -p
+  491  mongo admin  -u root -p
+  492  mongo admin  -u root -p '0a%rJFQll[C22}N'
+  493  mongo --help
+  494  mongo test  -u root -p '0a%rJFQll[C22}N'
+  495  pwd
+  496  ls
+  497  mongo --port 27017 -u root -p '0a%rJFQll[C22}N' --authenticationDatabase admin
+  498  pgrep mongod
+  499  pgrep mongo
+  500  exit
+  501  java -version
+  502  sudo mongo admin -u root -p 0a%rJFQll[C22}N
+  503  exit
+  504  java -version
+  505  tomcat 
+  506  tomcat -version
+  507  cd ..
+  508  cd usr
+  509  ls
+  510  cd bin/
+  511  ls
+  512  cd ..
+  513  cd ~
+  514  exit
+  515  tomcat 
+  516  cd ..
+  517  cd usr/sbin/
+  518  ls
+  519  tomcat
+  520  exit
+  521  mongo
+  522  ll
+  523  systemctl status mongod
+  524  cd  ..
+  525  cd ec2-user/
+  526  ls
+  527  sudo su -
+  528  exit
+  529  mongo
+  530  exit
+  531  mongo
+  532  cd ..
+  533  cd opt/tomcat/webapps/datalayer
+  534  sudo cd opt/tomcat/webapps/datalayer
+  535  ls
+  536  exit
+  537  mongo
+  538  ls
+  539  exit
+  540  ls
+  541  sudo su -
+  542  pgrep
+  543  pgrep --help
+  544  pgrep --nslist
+  545  1
+  546  pgrep l
+  547  pgrep -l
+  548  sudo netstat -nlp | grep :27017
+  549  sudo netstat -nlp | grep :5772
+  550  exit
+  551  sudo mongo
+  552  sudo mongodb
+  553  sudo mongo
+  554  mongo dbs
+  555  mongo
+  556  exit
+  557  mongo
+  558  mongo 
+  559  sudo mongo
+  560  mongo
+  561  mongo
+  562  cd ..
+  563  cd etc/mls
+  564  ls
+  565  cd ..
+  566  ls
+  567  cd opt/
+  568  ls
+  569  cd .
+  570  cd ..
+  571  cd etc/
+  572  ls
+  573  cd mongod.conf 
+  574  cat mongod.conf 
+  575  mongo
+  576  whoami
+  577  exit
+  578  /opt/tomcat/
+  579  cd /opt/tomcat/webapps
+  580  sudo cd /opt/tomcat/webapps
+  581  pwd
+  582  cd ..
+  583  cd opt/tomcat/webapps
+  584  sudo cd opt/tomcat/webapps
+  585  sudo cd opt/tomcat
+  586  sudo cd /opt/tomcat
+  587  cd /opt/
+  588  ls
+  589  cd tomcat/
+  590  ls
+  591  cd webappsmainalayer/
+  592  ls
+  593  cd ../webapps
+  594  sudo cd webapps
+  595  cd ..
+  596  sudo cd webapps
+  597  sudo su - 
+  598  su -
+  599  sudo su -
+  600  ls
+  601   cd /opt/tomcat/webapps
+  602  sudo  cd /opt/tomcat/webapps
+  603  exit
+  604  sudo cd /opt/tomcat/webapps/
+  605  ls
+  606  sudo su -
+  607  ls
+  608  desc mainlayer.war 
+  609  sudo desc mainlayer.war 
+  610  sudo su-
+  611  sudo su -
+  612  ls
+  613  pwd
+  614  sudo su -
+  615  date
+  616  sudo su -
+  617  cd /etc/nginx/cert/
+  618  ls
+  619  cd ..
+  620  ls
+  621  cat conf.d/
+  622  cd conf.d/
+  623  ls
+  624  cat default.conf 
+  625  su -
+  626  f
+  627  cd /var/log/nginx/
+  628  ls
+  629  exit
+  630  cd /var/log/nginx/
+  631  ls
+  632  exit
+  633  cd /etc/nginx/
+  634  cat nginx.conf 
+  635  cd /etc/nginx/conf.d/
+  636  ls
+  637  cat default.conf 
+  638  pwd
+  639  cd /etc/nginx/conf.d/
+  640  ls
+  641  sudo vi default.conf 
+  642  cd ~
+  643  cd /etc/nginx/
+  644  ls
+  645  vi nginx.conf 
+  646  sudo su -
+  647  ls
+  648  sudo su -
+  649  su -
+  650  f
+  651  sudo su -
+  652  cd /opt/tomcat/webapps/mainlayer
+  653  sudo su -
+  654  exit
+  655  cd /etc/
+  656  vi mongod.conf 
+  657  sudo vi mongod.conf 
+  658  exit
+  659  ack
+  660  ack -version
+  661  exit
+  662  vi /var/run/mongodb/mongod.pid 
+  663  cd /etc/init.d/
+  664  cat mongod 
+  665  exit
+  666  cd /opt/
+  667  ls
+  668  exit
+  669  cd /etc/init.d/
+  670  ls
+  671  vi mongod
+  672  exit
+  673  cd /etc/
+  674  cat mongod.conf 
+  675  vi mongod
+  676  vi mongod.conf 
+  677  mongo
+  678  cd /etc/mail/authinfo/
+  679  sudo cd /etc/mail/authinfo/
+  680  ls
+  681  sudo su -
+  682  exit
+  683  sudo su -
+  684  sudo vi /etc/nginx/nginx.conf
+  685  cd /etc/nginx/
+  686  ls
+  687  cat nginx.conf 
+  688  clear
+  689  cat /etc/nginx/nginx.conf 
+  690  ls
+  691  sudo su -
+  692  exit
+  693  sudo su -
+  694  ls
+  695  rm -rf dist.zip 
+  696  sudo su -
+  697  sudo su -
+  698  cd /opt/
+  699  sudo mkdir pdfUtils
+  700  sudo chown ec2-user:ec2-user /opt/pdfUtils/
+  701  sudo chmod 777 /opt/pdfUtils/
+  702  ls -l
+  703  exit
+  704  sudo su -
+  705  ls
+  706  sudo su -
+  707  date
+  708  systemctl stop tomcat
+  709  l
+  710  sudo su 
+  711  sudo su -
+  712  exit
+  713  sudo su -
+  714  systemctl status tomcat
+  715  systemctl status nginx
+  716  exit
+  717  sudo su -
+  718  exit
+  719  sudo su -
+  720  sudo su -
+  721  exit
+  722  date
+  723   date 
+  724  exit
+  725  sudo su -
+  726  sudo su 
+  727  sudo su 
+  728  exit
+  729  sudo su
+  730  cd /home/ec2-user/
+  731  ls
+  732  sudo su
+  733  sudo su 
+  734  exit
+  735  sudo su 
+  736  pwd
+  737  cd /home/
+  738  ls
+  739  cd ec2-user/
+  740  ls
+  741  ls
+  742  sudo su 
+  743  sudo su
+  744  cd /opt/tomcat/webapps/mainlayer
+  745  sudo su -
+  746  cd ~
+  747  ls
+  748  pdf 
+  749  ../pdf
+  750  ../Pdf
+  751  grep Pde
+  752  which Pdf
+  753  which Pdfext
+  754  exit
+  755  sudo su-
+  756  cd /opt/tomcat/
+  757  ls
+  758  vi try.html
+  759  cat try.txt
+  760  vi try.txt
+  761  cd ..
+  762  sudo su -
+  763  exit
+  764  sudo su -
+  765  ls
+  766  exit
+  767  sudo su -
+  768  exit
+  769  systemctl status nginx
+  770  systemctl status tomcat 
+  771  sudo su -
+  772  exit
+  773  sudo su -
+  774  systemctl status tomcat 
+  775  systemctl start tomcat 
+  776  sudo su-
+  777  sudo su -
+  778  exit
+  779  sudo su -
+  780  ls
+  781  sudo su -
+  782  ls
+  783  cd build/
+  784  ls
+  785  sudo su -
+  786  clear
+  787  sudo su -
+  788  exit
+  789  sudo su -
+  790  exit
+  791  ifconfig
+  792  exit
+  793  systemctl status tomcat 
+  794  systemctl start tomcat 
+  795  d
+  796  sudo systemctl start tomcat 
+  797  systemctl status tomcat 
+  798  exit
+  799  sudo su -
+  800  exit
+  801  ls
+  802  pwd
+  803  history > history07112017
